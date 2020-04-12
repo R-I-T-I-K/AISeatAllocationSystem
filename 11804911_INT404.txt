@@ -31,7 +31,7 @@ while em=='y':
         else:
             Fem[l]=name
             l=l+1
-        em=input('Do you want to enter more passenger???(y/n)\n')
+        em=input('Do you want to enter more passenger????(y/n)\n')
         continue
 for i in range(0,6):
     print(Dis[i])
