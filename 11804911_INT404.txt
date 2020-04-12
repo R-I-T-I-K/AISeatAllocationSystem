@@ -1,0 +1,46 @@
+d='x'
+em='y'
+mf='x'
+i=0
+j=0
+k=0
+l=0
+Dis=['Vacant','Vacant','Vacant','Vacant','Vacant','Vacant']
+Adu=['Vacant','Vacant','Vacant','Vacant','Vacant','Vacant']
+Mal=['Vacant','Vacant','Vacant','Vacant','Vacant','Vacant']
+Fem=['Vacant','Vacant','Vacant','Vacant','Vacant','Vacant']
+while em=='y':
+    name=input("Enter the name of passenger...\n")
+    age =int(input("Enter the age of passenger...\n"))
+    mf =input("Are you male or female?\n")
+    d=input('Are you physically disabled?(y/n)\n')
+    if d=='y':
+        Dis[i]=name
+        i=i+1
+        em=input('Do you want to enter more passenger???(y/n)\n')
+        continue
+    elif age<=18:
+        Adu[j]=name
+        j=j+1
+        em=input('Do you want to enter more passenger???(y/n)\n')
+        continue
+    elif age>18:
+        if(mf=='m'):
+            Mal[k]=name
+            k=k+1
+        else:
+            Fem[l]=name
+            l=l+1
+        em=input('Do you want to enter more passenger???(y/n)\n')
+        continue
+for i in range(0,6):
+    print(Dis[i])
+print("\n")
+for i in range(0,6):
+    print(Adu[i])
+print("\n")
+for i in range(0,6):
+    print(Mal[i])
+print("\n")
+for i in range(0,6):
+    print(Fem[i])
